@@ -13,22 +13,22 @@ public class fase4{
 		
 		
 		Scanner scanA = new Scanner (System.in); 
-        a = (scanA.nextLine()).toLowerCase();
+        a = (scanA.nextLine());
         
         Scanner scanB = new Scanner (System.in); 
-        b = (scanB.nextLine()).toLowerCase();
+        b = (scanB.nextLine());
         
         Scanner scanC = new Scanner (System.in); 
-        c = (scanC.nextLine()).toLowerCase();
+        c = (scanC.nextLine());
         
         Scanner scanD = new Scanner (System.in); 
-        d = (scanD.nextLine()).toLowerCase();
+        d = (scanD.nextLine());
 		
         Scanner scanE = new Scanner (System.in); 
-        e = (scanE.nextLine()).toLowerCase();
+        e = (scanE.nextLine());
         
         Scanner scanF = new Scanner (System.in); 
-        f = (scanF.nextLine()).toLowerCase();
+        f = (scanF.nextLine());
         
         
         ciutats.add(a);ciutats.add(b);ciutats.add(c);ciutats.add(d);ciutats.add(e);ciutats.add(f);
@@ -45,9 +45,15 @@ public class fase4{
         		}	
         	ciutats2.add(provisional);
         }
+        
+    	
         for(String[] i : ciutats2) {
+        	String resultado = "";
+        	for(String j : i) {
+        		resultado = resultado + j;
+        	}
         	
-        	System.out.println(Arrays.toString(i));
+        	System.out.println(resultado);
         }
         
         
